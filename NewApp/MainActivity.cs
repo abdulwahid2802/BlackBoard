@@ -3,14 +3,20 @@ using Android.Widget;
 using Android.OS;
 using Android.Support.V7.App;
 using System;
+using Android.Content;
+using Calligraphy;
 
 namespace NewApp
 {
 	[Activity(Label = "NewApp", MainLauncher = true, Icon = "@mipmap/icon", Theme ="@style/MyTheme")]
     public class MainActivity : AppCompatActivity
     {
-        int count = 1;
 
+		protected override void AttachBaseContext(Context newBase)
+        {
+            base.AttachBaseContext(CalligraphyContextWrapper.Wrap(newBase));
+        }
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);

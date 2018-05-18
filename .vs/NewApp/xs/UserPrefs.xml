@@ -1,14 +1,8 @@
 ﻿<Properties StartupConfiguration="{80A773B7-5482-45B2-98D3-2060556C10B4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="NewApp/Resources/drawable/back_btn_signup.xml">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="NewApp/MainActivity.cs" Line="27" Column="43" />
-      <File FileName="NewApp/Resources/values/styles.xml" Line="17" Column="41" />
-      <File FileName="NewApp/Resources/drawable/back_input.xml" Line="19" Column="1" />
-      <File FileName="NewApp/Resources/drawable/back_editText.xml" Line="15" Column="1" />
-      <File FileName="NewApp/Resources/drawable/back_checkbox.xml" Line="1" Column="1" />
-      <File FileName="NewApp/Resources/drawable/back_btn_singin.xml" Line="23" Column="12" />
-      <File FileName="NewApp/Resources/drawable/back_main_singin.xml" Line="7" Column="11" />
-      <File FileName="NewApp/Resources/drawable/back_btn_signup.xml" Line="14" Column="16" />
+      <File FileName="NewApp/MainActivity.cs" Line="17" Column="52" />
+      <File FileName="NewApp/Font.cs" Line="30" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

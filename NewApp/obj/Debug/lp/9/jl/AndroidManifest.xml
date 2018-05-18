@@ -14,10 +14,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="android.support.graphics.drawable.animated" >
+<manifest
+    package="android.support.graphics.drawable"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <uses-sdk android:minSdkVersion="11" />
+    <uses-sdk android:minSdkVersion="9" />
 
     <application />
 

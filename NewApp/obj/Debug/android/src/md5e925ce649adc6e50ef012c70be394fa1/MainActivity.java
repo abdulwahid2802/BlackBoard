@@ -10,6 +10,7 @@ public class MainActivity
 	public static final String __md_methods;
 	static {
 		__md_methods = 
+			"n_attachBaseContext:(Landroid/content/Context;)V:GetAttachBaseContext_Landroid_content_Context_Handler\n" +
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
 		mono.android.Runtime.register ("NewApp.MainActivity, NewApp", MainActivity.class, __md_methods);
@@ -22,6 +23,14 @@ public class MainActivity
 		if (getClass () == MainActivity.class)
 			mono.android.TypeManager.Activate ("NewApp.MainActivity, NewApp", "", this, new java.lang.Object[] {  });
 	}
+
+
+	public void attachBaseContext (android.content.Context p0)
+	{
+		n_attachBaseContext (p0);
+	}
+
+	private native void n_attachBaseContext (android.content.Context p0);
 
 
 	public void onCreate (android.os.Bundle p0)
