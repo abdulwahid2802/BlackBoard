@@ -25,10 +25,10 @@ namespace NewApp
             SetContentView(Resource.Layout.Main);
 
 			// Get our button from the layout resource,
-            // and attach an event to it
-            
+			// and attach an event to it
 
 
+			var btnSignIn = FindViewById<Button>(Resource.Id.logPage_btn_singin);
 
             var builder = new Android.Support.V7.App.AlertDialog.Builder(this);
 
@@ -38,6 +38,11 @@ namespace NewApp
                    .SetNegativeButton("No", delegate  { Console.WriteLine("No"); });
 
 
+            btnSignIn.Click+=delegate {
+
+				builder.Create().Show();
+
+			};
                     
         }
     }

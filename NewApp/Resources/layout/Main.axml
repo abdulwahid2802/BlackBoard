@@ -14,22 +14,22 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/relativeLayout1"
+        android:id="@+id/logPage_logo_rLayout"
         android:layout_weight="50">
         <ImageView
-            android:src="@drawable/Logo"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:id="@+id/imageView1"
+            android:id="@+id/logPage_logo_imgView"
             android:layout_centerInParent="true"
-            android:adjustViewBounds="false" />
+            android:adjustViewBounds="false"
+            android:src="@mipmap/logo" />
     </RelativeLayout>
     <RelativeLayout
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/relativeLayout2"
+        android:id="@+id/logPage_input_rLayout"
         android:layout_weight="50">
         <android.support.design.widget.TextInputLayout
             android:minWidth="25px"
@@ -38,7 +38,7 @@
             android:layout_marginRight="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/inputUsername"
+            android:id="@+id/logPage_input_txtInputLayout_username"
             android:background="@drawable/back_input"
             android:layout_centerHorizontal="true">
             <android.support.design.widget.TextInputEditText
@@ -50,7 +50,7 @@
                 android:background="@drawable/back_edittext"
                 android:gravity="center_horizontal"
                 android:hint="Username"
-                android:id="@+id/textInputEditText1" />
+                android:id="@+id/logPage_input_edittxt_username" />
         </android.support.design.widget.TextInputLayout>
         <android.support.design.widget.TextInputLayout
             android:minWidth="25px"
@@ -59,10 +59,10 @@
             android:layout_marginRight="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textInputLayout2"
+            android:id="@+id/logPage_input_txtInputLayout_pass"
             android:background="@drawable/back_input"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/inputUsername"
+            android:layout_below="@id/logPage_input_txtInputLayout_username"
             android:layout_marginTop="10dp">
             <android.support.design.widget.TextInputEditText
                 android:textSize="12sp"
@@ -73,17 +73,18 @@
                 android:layout_height="wrap_content"
                 android:hint="Password"
                 android:gravity="center_horizontal"
-                android:id="@+id/textInputEditText2" />
+                android:id="@+id/logPage_input_edittxt_pass" />
         </android.support.design.widget.TextInputLayout>
         <LinearLayout
-            android:id="@+id/Linearlayout2"
+            android:id="@+id/logPage_input_lLayout_checkBox"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:layout_below="@id/textInputLayout2"
+            android:layout_below="@id/logPage_input_txtInputLayout_pass"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp">
             <CheckBox
+                android:id="@+id/logPage_checkbox_remMe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Remember me?"
@@ -98,11 +99,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/Linearlayout2"
-            android:id="@+id/Linearlayout3"
+            android:layout_below="@id/logPage_input_lLayout_checkBox"
+            android:id="@+id/logPage_input_lLayout_buttons"
             android:orientation="horizontal"
             android:weightSum="100">
             <Button
+                android:id="@+id/logPage_btn_singin"
                 android:layout_height="35dp"
                 android:layout_width="0dp"
                 android:layout_weight="50"
@@ -112,6 +114,7 @@
                 android:text="LOGIN"
                 android:textColor="#99f5f5f5" />
             <Button
+                android:id="@+id/logPage_btn_singup"
                 android:layout_height="35dp"
                 android:layout_width="0dp"
                 android:layout_weight="50"
@@ -122,5 +125,13 @@
                 android:textColor="#44f5f5f5"
                 android:enabled="false" />
         </LinearLayout>
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/logPage_logoCombined"
+            android:src="@drawable/logocombined"
+            android:layout_below="@id/logPage_input_lLayout_buttons"
+            android:layout_alignWithParentIfMissing="false"
+            android:padding="10dp" />
     </RelativeLayout>
 </LinearLayout>

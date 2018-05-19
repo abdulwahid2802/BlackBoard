@@ -112,6 +112,12 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\Logo.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Logo.png" />
     <AndroidResource Include="Resources\drawable\Logo.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\logoCombined.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\logoCombined.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\logoCombined.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\logoCombined.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\logoCombined.png" />
+    <AndroidResource Include="Resources\drawable\logoCombined.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

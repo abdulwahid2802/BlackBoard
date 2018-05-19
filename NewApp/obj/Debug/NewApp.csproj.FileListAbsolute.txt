@@ -48,6 +48,12 @@
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/res/mipmap-xxhdpi/logo.png
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/res/mipmap-xxxhdpi/logo.png
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/res/drawable/logo.png
+/Users/mac/Projects/NewApp/NewApp/obj/Debug/res/mipmap-hdpi/logocombined.png
+/Users/mac/Projects/NewApp/NewApp/obj/Debug/res/mipmap-mdpi/logocombined.png
+/Users/mac/Projects/NewApp/NewApp/obj/Debug/res/mipmap-xhdpi/logocombined.png
+/Users/mac/Projects/NewApp/NewApp/obj/Debug/res/mipmap-xxhdpi/logocombined.png
+/Users/mac/Projects/NewApp/NewApp/obj/Debug/res/mipmap-xxxhdpi/logocombined.png
+/Users/mac/Projects/NewApp/NewApp/obj/Debug/res/drawable/logocombined.png
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/R.cs.flag
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/R.txt
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/uploadflags.txt
