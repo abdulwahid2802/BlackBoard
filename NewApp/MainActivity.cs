@@ -5,12 +5,21 @@ using Android.Support.V7.App;
 using System;
 using Android.Content;
 using Calligraphy;
+using Android.Support.Design.Widget;
+using Android.Runtime;
+using Android.Views;
+using Android.Views.InputMethods;
 
 namespace NewApp
 {
 	[Activity(Label = "NewApp", MainLauncher = true, Icon = "@mipmap/icon", Theme ="@style/MyTheme")]
-    public class MainActivity : AppCompatActivity
-    {
+    public class MainActivity : AppCompatActivity, TextView.IOnEditorActionListener, View.IOnTouchListener
+	{
+
+		TextInputEditText txtInputUserName;
+		TextInputEditText txtInputPassWord;
+		LinearLayout logPageMainLayout;
+
 
 		protected override void AttachBaseContext(Context newBase)
         {
@@ -27,8 +36,24 @@ namespace NewApp
 			// Get our button from the layout resource,
 			// and attach an event to it
 
-
+            
 			var btnSignIn = FindViewById<Button>(Resource.Id.logPage_btn_singin);
+			txtInputUserName = FindViewById<TextInputEditText>(Resource.Id.logPage_input_edittxt_username);
+			txtInputPassWord = FindViewById<TextInputEditText>(Resource.Id.logPage_input_edittxt_pass);
+			logPageMainLayout = FindViewById<LinearLayout>(Resource.Id.logPage_mainLayout);
+
+			logPageMainLayout.SetOnTouchListener(this);
+
+			// ++++++ //
+			txtInputUserName.ImeOptions = ImeAction.Next;
+			txtInputPassWord.ImeOptions = ImeAction.Done;
+
+
+
+			txtInputUserName.SetOnEditorActionListener(this);
+			txtInputPassWord.SetOnEditorActionListener(this);
+
+
 
             var builder = new Android.Support.V7.App.AlertDialog.Builder(this);
 
@@ -45,6 +70,35 @@ namespace NewApp
 			};
                     
         }
-    }
+
+		public bool OnEditorAction(TextView v, [GeneratedEnum] ImeAction actionId, KeyEvent e)
+        {
+            switch(actionId)
+			{
+				case ImeAction.Next:
+					txtInputPassWord.RequestFocus();
+					Console.WriteLine(actionId.ToString() + " ImeAction");
+					break;
+
+				case ImeAction.Done:
+					// Hides the Keyboard
+					Console.WriteLine(actionId.ToString() + " ImeAction");
+					InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
+					imm.HideSoftInputFromWindow(txtInputPassWord.WindowToken, Android.Views.InputMethods.HideSoftInputFlags.None);
+					break;
+
+			}
+
+			return false;
+        }
+
+		public bool OnTouch(View v, MotionEvent e)
+		{
+            InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
+            imm.HideSoftInputFromWindow(txtInputPassWord.WindowToken, Android.Views.InputMethods.HideSoftInputFlags.None);
+
+			return false;
+		}
+	}
 }
 
