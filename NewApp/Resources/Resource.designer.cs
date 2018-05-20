@@ -2417,6 +2417,9 @@ namespace NewApp
 			// aapt resource value: 0x7f0b0049
 			public const int list_item = 2131427401;
 			
+			// aapt resource value: 0x7f0b0089
+			public const int logPage_btn_ForgotPass = 2131427465;
+			
 			// aapt resource value: 0x7f0b008b
 			public const int logPage_btn_singin = 2131427467;
 			
@@ -2455,9 +2458,6 @@ namespace NewApp
 			
 			// aapt resource value: 0x7f0b0080
 			public const int logPage_mainLayout = 2131427456;
-			
-			// aapt resource value: 0x7f0b0089
-			public const int logPage_txtForgotPass = 2131427465;
 			
 			// aapt resource value: 0x7f0b00a6
 			public const int masked = 2131427494;

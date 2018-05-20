@@ -2748,6 +2748,7 @@ containing a value of this type.
         public static final int line3=0x7f0b00a2;
         public static final int listMode=0x7f0b0031;
         public static final int list_item=0x7f0b0049;
+        public static final int logPage_btn_ForgotPass=0x7f0b0089;
         public static final int logPage_btn_singin=0x7f0b008b;
         public static final int logPage_btn_singup=0x7f0b008c;
         public static final int logPage_input_edittxt_pass=0x7f0b0087;
@@ -2761,7 +2762,6 @@ containing a value of this type.
         public static final int logPage_logo_imgView=0x7f0b0082;
         public static final int logPage_logo_rLayout=0x7f0b0081;
         public static final int logPage_mainLayout=0x7f0b0080;
-        public static final int logPage_txtForgotPass=0x7f0b0089;
         public static final int masked=0x7f0b00a6;
         public static final int media_actions=0x7f0b0094;
         public static final int middle=0x7f0b003c;

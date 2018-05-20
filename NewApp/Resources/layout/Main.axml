@@ -92,19 +92,18 @@
             android:layout_below="@id/logPage_input_txtInputLayout_pass"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp">
-            <TextView
-                android:id="@+id/logPage_txtForgotPass"
+            <Button
+                android:id="@+id/logPage_btn_ForgotPass"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="15dp"
                 android:textSize="10sp"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:clickable="true"
-                android:focusableInTouchMode="true"
                 android:text="Forgot Password"
                 android:textColor="#9Cf5f5f5"
                 android:textStyle="italic"
-                android:textColorHighlight="#FFf5f5f5" />
+                android:background="#00ffffff" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"

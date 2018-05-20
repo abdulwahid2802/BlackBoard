@@ -763,6 +763,7 @@ int id line1 0x7f0b00a0
 int id line3 0x7f0b00a2
 int id listMode 0x7f0b0031
 int id list_item 0x7f0b0049
+int id logPage_btn_ForgotPass 0x7f0b0089
 int id logPage_btn_singin 0x7f0b008b
 int id logPage_btn_singup 0x7f0b008c
 int id logPage_input_edittxt_pass 0x7f0b0087
@@ -776,7 +777,6 @@ int id logPage_logoCombined 0x7f0b008d
 int id logPage_logo_imgView 0x7f0b0082
 int id logPage_logo_rLayout 0x7f0b0081
 int id logPage_mainLayout 0x7f0b0080
-int id logPage_txtForgotPass 0x7f0b0089
 int id masked 0x7f0b00a6
 int id media_actions 0x7f0b0094
 int id middle 0x7f0b003c

@@ -20,7 +20,7 @@ namespace NewApp
 		TextInputEditText txtInputUserName;
 		TextInputEditText txtInputPassWord;
 		LinearLayout logPageMainLayout;
-		TextView txtForgotPassword;
+		Button btn_ForgotPassword;
 
 
 
@@ -40,10 +40,10 @@ namespace NewApp
 			txtInputUserName = FindViewById<TextInputEditText>(Resource.Id.logPage_input_edittxt_username);
 			txtInputPassWord = FindViewById<TextInputEditText>(Resource.Id.logPage_input_edittxt_pass);
 			logPageMainLayout = FindViewById<LinearLayout>(Resource.Id.logPage_mainLayout);
-			txtForgotPassword = FindViewById<TextView>(Resource.Id.logPage_txtForgotPass);
+			btn_ForgotPassword = FindViewById<Button>(Resource.Id.logPage_btn_ForgotPass);
 
 			logPageMainLayout.SetOnTouchListener(this);
-			txtForgotPassword.SetOnClickListener(this);
+			btn_ForgotPassword.SetOnClickListener(this);
 
 			// ++++++ //
 			txtInputUserName.ImeOptions = ImeAction.Next;
@@ -111,10 +111,22 @@ namespace NewApp
 
             switch(id)
 			{
-				case Resource.Id.logPage_txtForgotPass:
-					v.Elevation = 20;
+				case Resource.Id.logPage_btn_ForgotPass:
+					StartActivity(new Android.Content.Intent(this, typeof(ForgotPassword)));
+					Finish();
+					break;
+				case Resource.Id.logPage_btn_singin:
+
+					LoginUser(txtInputUserName.Text, txtInputPassWord.Text);
+
 					break;
 			}
+
+		}
+
+		private void LoginUser(string userName, string userPass)
+		{
+			
 		}
 	}
 }

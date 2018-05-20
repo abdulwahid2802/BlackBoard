@@ -3,7 +3,6 @@
 /Users/mac/Projects/NewApp/NewApp/bin/Debug/com.companyname.NewApp.apk
 /Users/mac/Projects/NewApp/NewApp/bin/Debug/com.companyname.NewApp-Signed.apk
 /Users/mac/Projects/NewApp/NewApp/bin/Debug/Calligraphy.dll
-/Users/mac/Projects/NewApp/NewApp/obj/Debug/NewApp.csprojResolveAssemblyReference.cache
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/XbdMerge/Xamarin.Android.Support.Compat.dll
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/XbdMerge/Xamarin.Android.Support.Core.UI.dll
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/XbdMerge/Xamarin.Android.Support.Core.Utils.dll
@@ -45,10 +44,10 @@
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/res/mipmap-xxxhdpi/logocombined.png
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/res/drawable/logocombined.png
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/res/drawable/input_cursor.xml
+/Users/mac/Projects/NewApp/NewApp/obj/Debug/res/drawable/back_txtforgotpass.xml
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/R.cs.flag
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/R.txt
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/uploadflags.txt
-/Users/mac/Projects/NewApp/NewApp/obj/Debug/res/drawable/back_txtforgotpass.xml
 /Users/mac/Projects/NewApp/NewApp/bin/Debug/Mono.Android.pdb
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/linksrc/NewApp.pdb
 /Users/mac/Projects/NewApp/NewApp/obj/Debug/linksrc/Mono.Android.pdb

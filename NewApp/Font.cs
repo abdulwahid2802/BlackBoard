@@ -21,7 +21,7 @@ namespace NewApp
             base.OnCreate();
             CalligraphyConfig.InitDefault(
               new CalligraphyConfig.Builder()
-                .SetDefaultFontPath("MontserratAlternates_Regular.ttf")
+				.SetDefaultFontPath("DidactGothic_Regular.ttf")
                 .SetFontAttrId(Resource.Attribute.fontPath)
                 .Build()
             );
