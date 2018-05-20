@@ -10,20 +10,26 @@ using Android.Runtime;
 using Android.Views;
 using Android.Views.InputMethods;
 using static Android.Views.View;
+using Firebase;
+using Firebase.Auth;
+using Android.Gms.Tasks;
 
 namespace NewApp
 {
 	[Activity(Label = "NewApp", MainLauncher = true, Icon = "@mipmap/icon", Theme ="@style/MyTheme")]
-    public class MainActivity : AppCompatActivity, TextView.IOnEditorActionListener, View.IOnTouchListener, IOnClickListener
+    public class MainActivity : AppCompatActivity, IOnCompleteListener, TextView.IOnEditorActionListener, View.IOnTouchListener, IOnClickListener
 	{
 
 		TextInputEditText txtInputUserName;
 		TextInputEditText txtInputPassWord;
 		LinearLayout logPageMainLayout;
 		Button btn_ForgotPassword;
+		Button btn_SignIn;
 
+		public static FirebaseApp app;
+		FirebaseAuth auth;
 
-
+        
         
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -36,7 +42,9 @@ namespace NewApp
 			// and attach an event to it
 
             
-			var btnSignIn = FindViewById<Button>(Resource.Id.logPage_btn_singin);
+			InitFirebaseAuth();
+            
+			btn_SignIn = FindViewById<Button>(Resource.Id.logPage_btn_singin);
 			txtInputUserName = FindViewById<TextInputEditText>(Resource.Id.logPage_input_edittxt_username);
 			txtInputPassWord = FindViewById<TextInputEditText>(Resource.Id.logPage_input_edittxt_pass);
 			logPageMainLayout = FindViewById<LinearLayout>(Resource.Id.logPage_mainLayout);
@@ -44,6 +52,7 @@ namespace NewApp
 
 			logPageMainLayout.SetOnTouchListener(this);
 			btn_ForgotPassword.SetOnClickListener(this);
+			btn_SignIn.SetOnClickListener(this);
 
 			// ++++++ //
 			txtInputUserName.ImeOptions = ImeAction.Next;
@@ -70,6 +79,20 @@ namespace NewApp
 
                     
         }
+
+		private void InitFirebaseAuth()
+		{
+			var options = new FirebaseOptions.Builder()
+			                             .SetApplicationId("1:354570866373:android:f9606ee43f877aa5")
+			                             .SetApiKey("AIzaSyCbirgbUNGz5Qv5SuXqEgsfkFiK92yiR4o")
+										 .Build();
+
+			if (app == null)
+				app = FirebaseApp.InitializeApp(this, options);
+
+			auth = FirebaseAuth.GetInstance(app);
+       
+		}
 
 		public bool OnEditorAction(TextView v, [GeneratedEnum] ImeAction actionId, KeyEvent e)
         {
@@ -108,25 +131,39 @@ namespace NewApp
 		public void OnClick(View v)
 		{
 			int id = v.Id;
+			Console.WriteLine("out of switch Sign In Cliskced");
+
 
             switch(id)
 			{
 				case Resource.Id.logPage_btn_ForgotPass:
 					StartActivity(new Android.Content.Intent(this, typeof(ForgotPassword)));
-					Finish();
 					break;
 				case Resource.Id.logPage_btn_singin:
-
+					Console.WriteLine("Sign In Cliskced");
 					LoginUser(txtInputUserName.Text, txtInputPassWord.Text);
 
 					break;
 			}
 
 		}
-
+        
 		private void LoginUser(string userName, string userPass)
 		{
-			
+			auth.SignInWithEmailAndPassword(userName, userPass).AddOnCompleteListener(this);
+		}
+
+		public void OnComplete(Task task)
+		{
+			if(task.IsSuccessful)
+			{
+				StartActivity(new Android.Content.Intent(this, typeof(Home)));
+				Finish();
+			}
+			else
+			{
+				Snackbar snackbar = Snackbar.Make(logPageMainLayout, "LOGIN FAILED!", Snackbar.LengthShort);
+			}
 		}
 	}
 }
