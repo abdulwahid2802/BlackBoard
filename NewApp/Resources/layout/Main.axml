@@ -4,7 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/logPage_mainLayout"
     android:clickable="true"
-    android:focusableInTouchMode="true"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -93,18 +92,19 @@
             android:layout_below="@id/logPage_input_txtInputLayout_pass"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp">
-            <CheckBox
-                android:id="@+id/logPage_checkbox_remMe"
+            <TextView
+                android:id="@+id/logPage_txtForgotPass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Remember me?"
-                style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
-                android:pointerIcon="zoom_out"
-                android:forceHasOverlappingRendering="false"
-                android:allowUndo="true"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:text="Forgot Password"
                 android:textColor="#9Cf5f5f5"
-                android:buttonTint="#CCF5f5f5"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+                android:textColorHighlight="#FFf5f5f5" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -141,6 +141,7 @@
             android:id="@+id/logPage_logoCombined"
             android:src="@drawable/logocombined"
             android:layout_below="@id/logPage_input_lLayout_buttons"
+            android:layout_marginTop="15dp"
             android:layout_alignWithParentIfMissing="false"
             android:padding="10dp"
             android:layout_centerVertical="true" />

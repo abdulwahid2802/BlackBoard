@@ -2749,7 +2749,6 @@ containing a value of this type.
         public static int list_item=0x7f0b0049;
         public static int logPage_btn_singin=0x7f0b008b;
         public static int logPage_btn_singup=0x7f0b008c;
-        public static int logPage_checkbox_remMe=0x7f0b0089;
         public static int logPage_input_edittxt_pass=0x7f0b0087;
         public static int logPage_input_edittxt_username=0x7f0b0085;
         public static int logPage_input_lLayout_buttons=0x7f0b008a;
@@ -2761,6 +2760,7 @@ containing a value of this type.
         public static int logPage_logo_imgView=0x7f0b0082;
         public static int logPage_logo_rLayout=0x7f0b0081;
         public static int logPage_mainLayout=0x7f0b0080;
+        public static int logPage_txtForgotPass=0x7f0b0089;
         public static int masked=0x7f0b00a6;
         public static int media_actions=0x7f0b0094;
         public static int middle=0x7f0b003c;
