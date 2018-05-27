@@ -387,6 +387,24 @@ namespace NewApp
 			// aapt resource value: 1
 			public static int cameraZoom = 1;
 			
+			// aapt resource value: 2130968577
+			public static int cardBackgroundColor = 2130968577;
+			
+			// aapt resource value: 2130968578
+			public static int cardCornerRadius = 2130968578;
+			
+			// aapt resource value: 2130968579
+			public static int cardElevation = 2130968579;
+			
+			// aapt resource value: 2130968580
+			public static int cardMaxElevation = 2130968580;
+			
+			// aapt resource value: 2130968581
+			public static int cardPreventCornerOverlap = 2130968581;
+			
+			// aapt resource value: 2130968582
+			public static int cardUseCompatPadding = 2130968582;
+			
 			// aapt resource value: 1
 			public static int castBackground = 1;
 			
@@ -563,6 +581,21 @@ namespace NewApp
 			
 			// aapt resource value: 2130771995
 			public static int contentInsetStartWithNavigation = 2130771995;
+			
+			// aapt resource value: 2130968583
+			public static int contentPadding = 2130968583;
+			
+			// aapt resource value: 2130968584
+			public static int contentPaddingBottom = 2130968584;
+			
+			// aapt resource value: 2130968585
+			public static int contentPaddingLeft = 2130968585;
+			
+			// aapt resource value: 2130968586
+			public static int contentPaddingRight = 2130968586;
+			
+			// aapt resource value: 2130968587
+			public static int contentPaddingTop = 2130968587;
 			
 			// aapt resource value: 1
 			public static int contentProviderUri = 1;
@@ -1643,6 +1676,18 @@ namespace NewApp
 			// aapt resource value: 2131296274
 			public static int button_material_light = 2131296274;
 			
+			// aapt resource value: 2131099649
+			public static int cardview_dark_background = 2131099649;
+			
+			// aapt resource value: 2131099650
+			public static int cardview_light_background = 2131099650;
+			
+			// aapt resource value: 2131099651
+			public static int cardview_shadow_end_color = 2131099651;
+			
+			// aapt resource value: 2131099652
+			public static int cardview_shadow_start_color = 2131099652;
+			
 			// aapt resource value: 1
 			public static int cast_expanded_controller_ad_container_white_stripe_color = 1;
 			
@@ -2171,6 +2216,15 @@ namespace NewApp
 			
 			// aapt resource value: 2131099652
 			public static int abc_text_size_title_material_toolbar = 2131099652;
+			
+			// aapt resource value: 2131230721
+			public static int cardview_compat_inset_shadow = 2131230721;
+			
+			// aapt resource value: 2131230722
+			public static int cardview_default_elevation = 2131230722;
+			
+			// aapt resource value: 2131230723
+			public static int cardview_default_radius = 2131230723;
 			
 			// aapt resource value: 1
 			public static int cast_expanded_controller_ad_background_layout_height = 1;
@@ -3410,6 +3464,24 @@ namespace NewApp
 			// aapt resource value: 1
 			public static int button = 1;
 			
+			// aapt resource value: 0
+			public static int button1 = 0;
+			
+			// aapt resource value: 0
+			public static int button2 = 0;
+			
+			// aapt resource value: 0
+			public static int button3 = 0;
+			
+			// aapt resource value: 0
+			public static int button4 = 0;
+			
+			// aapt resource value: 0
+			public static int button5 = 0;
+			
+			// aapt resource value: 0
+			public static int button6 = 0;
+			
 			// aapt resource value: 2131361839
 			public static int buttonPanel = 2131361839;
 			
@@ -3445,6 +3517,24 @@ namespace NewApp
 			
 			// aapt resource value: 2131361883
 			public static int cancel_action = 2131361883;
+			
+			// aapt resource value: 0
+			public static int cardView1 = 0;
+			
+			// aapt resource value: 0
+			public static int cardView2 = 0;
+			
+			// aapt resource value: 0
+			public static int cardView3 = 0;
+			
+			// aapt resource value: 0
+			public static int cardView4 = 0;
+			
+			// aapt resource value: 0
+			public static int cardView5 = 0;
+			
+			// aapt resource value: 0
+			public static int cardView6 = 0;
 			
 			// aapt resource value: 1
 			public static int cast_button_type_closed_caption = 1;
@@ -3632,6 +3722,15 @@ namespace NewApp
 			// aapt resource value: 2131361806
 			public static int homeAsUp = 2131361806;
 			
+			// aapt resource value: 0
+			public static int home_main_lLayout = 0;
+			
+			// aapt resource value: 0
+			public static int home_rLayout = 0;
+			
+			// aapt resource value: 0
+			public static int home_txtHeader = 0;
+			
 			// aapt resource value: 1
 			public static int html = 1;
 			
@@ -3718,6 +3817,24 @@ namespace NewApp
 			
 			// aapt resource value: 2131361899
 			public static int line3 = 2131361899;
+			
+			// aapt resource value: 0
+			public static int linearLayout1 = 0;
+			
+			// aapt resource value: 0
+			public static int linearLayout2 = 0;
+			
+			// aapt resource value: 0
+			public static int linearLayout3 = 0;
+			
+			// aapt resource value: 0
+			public static int linearLayout4 = 0;
+			
+			// aapt resource value: 0
+			public static int linearLayout5 = 0;
+			
+			// aapt resource value: 0
+			public static int linearLayout6 = 0;
 			
 			// aapt resource value: 2131361802
 			public static int listMode = 2131361802;
@@ -4360,6 +4477,9 @@ namespace NewApp
 			// aapt resource value: 2131689512
 			public static int design_text_input_password_icon = 2131689512;
 			
+			// aapt resource value: 0
+			public static int Home = 0;
+			
 			// aapt resource value: 1
 			public static int libraries_social_licenses_license = 1;
 			
@@ -4885,6 +5005,9 @@ namespace NewApp
 			// aapt resource value: 2132148235
 			public static int Base_Animation_AppCompat_Tooltip = 2132148235;
 			
+			// aapt resource value: 2132148225
+			public static int Base_CardView = 2132148225;
+			
 			// aapt resource value: 2131165352
 			public static int Base_DialogWindowTitleBackground_AppCompat = 2131165352;
 			
@@ -5358,6 +5481,15 @@ namespace NewApp
 			
 			// aapt resource value: 2132148393
 			public static int Base_Widget_Design_TabLayout = 2132148393;
+			
+			// aapt resource value: 2132148226
+			public static int CardView = 2132148226;
+			
+			// aapt resource value: 2132148227
+			public static int CardView_Dark = 2132148227;
+			
+			// aapt resource value: 2132148228
+			public static int CardView_Light = 2132148228;
 			
 			// aapt resource value: 1
 			public static int CastExpandedController = 1;
@@ -6987,6 +7119,60 @@ namespace NewApp
 			
 			// aapt resource value: 0
 			public static int ButtonBarLayout_allowStacking = 0;
+			
+			public static int[] CardView = new int[] {
+					16843072,
+					16843071,
+					2130968577,
+					2130968578,
+					2130968579,
+					2130968580,
+					2130968581,
+					2130968582,
+					2130968583,
+					2130968584,
+					2130968585,
+					2130968586,
+					2130968587};
+			
+			// aapt resource value: 0
+			public static int CardView_android_minHeight = 0;
+			
+			// aapt resource value: 1
+			public static int CardView_android_minWidth = 1;
+			
+			// aapt resource value: 2
+			public static int CardView_cardBackgroundColor = 2;
+			
+			// aapt resource value: 3
+			public static int CardView_cardCornerRadius = 3;
+			
+			// aapt resource value: 4
+			public static int CardView_cardElevation = 4;
+			
+			// aapt resource value: 5
+			public static int CardView_cardMaxElevation = 5;
+			
+			// aapt resource value: 6
+			public static int CardView_cardPreventCornerOverlap = 6;
+			
+			// aapt resource value: 7
+			public static int CardView_cardUseCompatPadding = 7;
+			
+			// aapt resource value: 8
+			public static int CardView_contentPadding = 8;
+			
+			// aapt resource value: 9
+			public static int CardView_contentPaddingBottom = 9;
+			
+			// aapt resource value: 16
+			public static int CardView_contentPaddingLeft = 16;
+			
+			// aapt resource value: 17
+			public static int CardView_contentPaddingRight = 17;
+			
+			// aapt resource value: 18
+			public static int CardView_contentPaddingTop = 18;
 			
 			public static int[] CastExpandedController = new int[] {
 					1,

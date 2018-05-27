@@ -2,7 +2,7 @@ package md5e925ce649adc6e50ef012c70be394fa1;
 
 
 public class Home
-	extends android.app.Activity
+	extends android.support.v7.app.AppCompatActivity
 	implements
 		mono.android.IGCUserPeer
 {

@@ -13,16 +13,18 @@ using static Android.Views.View;
 using Firebase;
 using Firebase.Auth;
 using Android.Gms.Tasks;
+using Java.Lang;
 
 namespace NewApp
 {
 	[Activity(Label = "NewApp", MainLauncher = true, Icon = "@mipmap/icon", Theme ="@style/MyTheme")]
-    public class MainActivity : AppCompatActivity, IOnCompleteListener, TextView.IOnEditorActionListener, View.IOnTouchListener, IOnClickListener
+    public class MainActivity : AppCompatActivity, IOnFailureListener, IOnCompleteListener, TextView.IOnEditorActionListener, View.IOnTouchListener, IOnClickListener
 	{
 
 		TextInputEditText txtInputUserName;
 		TextInputEditText txtInputPassWord;
 		LinearLayout logPageMainLayout;
+		RelativeLayout logPage_input_rLayout;
 		Button btn_ForgotPassword;
 		Button btn_SignIn;
 
@@ -49,6 +51,9 @@ namespace NewApp
 			txtInputPassWord = FindViewById<TextInputEditText>(Resource.Id.logPage_input_edittxt_pass);
 			logPageMainLayout = FindViewById<LinearLayout>(Resource.Id.logPage_mainLayout);
 			btn_ForgotPassword = FindViewById<Button>(Resource.Id.logPage_btn_ForgotPass);
+			logPage_input_rLayout = FindViewById<RelativeLayout>(Resource.Id.logPage_input_rLayout);
+
+
 
 			logPageMainLayout.SetOnTouchListener(this);
 			btn_ForgotPassword.SetOnClickListener(this);
@@ -150,7 +155,11 @@ namespace NewApp
         
 		private void LoginUser(string userName, string userPass)
 		{
-			auth.SignInWithEmailAndPassword(userName, userPass).AddOnCompleteListener(this);
+			if (userName.Length < 6 || userPass.Length < 6)
+				return;
+			auth.SignInWithEmailAndPassword(userName, userPass)
+			    .AddOnCompleteListener(this)
+			    .AddOnFailureListener(this);
 		}
 
 		public void OnComplete(Task task)
@@ -163,7 +172,14 @@ namespace NewApp
 			else
 			{
 				Snackbar snackbar = Snackbar.Make(logPageMainLayout, "LOGIN FAILED!", Snackbar.LengthShort);
+				snackbar.Show();
 			}
+
+		}
+
+		public void OnFailure(Java.Lang.Exception e)
+		{
+			//Snackbar.Make(logPage_input_rLayout, "LOGIN FAILED!", Snackbar.LengthShort).Show();
 		}
 	}
 }
