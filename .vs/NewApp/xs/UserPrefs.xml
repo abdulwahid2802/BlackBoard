@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{80A773B7-5482-45B2-98D3-2060556C10B4}|Default">
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="NewApp/MainActivity.cs" Line="17" Column="52" />
-      <File FileName="NewApp/Font.cs" Line="30" Column="2" />
+      <File FileName="NewApp/Activities/MainActivity.cs" Line="20" Column="36" />
+      <File FileName="NewApp/Activities/Home.cs" Line="16" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -11,5 +11,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.NewApp AndroidDesignerPreferredDevice="Nexus 5" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" />
+  <MonoDevelop.Ide.ItemProperties.NewApp AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="MyTheme" />
 </Properties>
