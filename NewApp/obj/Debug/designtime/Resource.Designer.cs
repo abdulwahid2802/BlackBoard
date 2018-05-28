@@ -2872,6 +2872,9 @@ namespace NewApp
 			// aapt resource value: 0
 			public static int back_txtForgotPass = 0;
 			
+			// aapt resource value: 0
+			public static int btn_elev_anim = 0;
+			
 			// aapt resource value: 1
 			public static int cast_abc_scrubber_control_off_mtrl_alpha = 1;
 			
@@ -3115,6 +3118,21 @@ namespace NewApp
 			// aapt resource value: 0
 			public static int googleg_standard_color_18 = 0;
 			
+			// aapt resource value: 0
+			public static int ic_bb = 0;
+			
+			// aapt resource value: 0
+			public static int ic_hw = 0;
+			
+			// aapt resource value: 0
+			public static int ic_lp = 0;
+			
+			// aapt resource value: 0
+			public static int ic_mr = 0;
+			
+			// aapt resource value: 0
+			public static int ic_n = 0;
+			
 			// aapt resource value: 1
 			public static int ic_plusone_medium_off_client = 1;
 			
@@ -3126,6 +3144,9 @@ namespace NewApp
 			
 			// aapt resource value: 1
 			public static int ic_plusone_tall_off_client = 1;
+			
+			// aapt resource value: 0
+			public static int ic_sns = 0;
 			
 			// aapt resource value: 0
 			public static int input_cursor = 0;
@@ -3310,6 +3331,9 @@ namespace NewApp
 			// aapt resource value: 1
 			public static int quantum_ic_volume_up_white_36 = 1;
 			
+			// aapt resource value: 0
+			public static int ripple = 0;
+			
 			// aapt resource value: 2131296361
 			public static int tooltip_frame_dark = 2131296361;
 			
@@ -3464,24 +3488,6 @@ namespace NewApp
 			// aapt resource value: 1
 			public static int button = 1;
 			
-			// aapt resource value: 0
-			public static int button1 = 0;
-			
-			// aapt resource value: 0
-			public static int button2 = 0;
-			
-			// aapt resource value: 0
-			public static int button3 = 0;
-			
-			// aapt resource value: 0
-			public static int button4 = 0;
-			
-			// aapt resource value: 0
-			public static int button5 = 0;
-			
-			// aapt resource value: 0
-			public static int button6 = 0;
-			
 			// aapt resource value: 2131361839
 			public static int buttonPanel = 2131361839;
 			
@@ -3517,24 +3523,6 @@ namespace NewApp
 			
 			// aapt resource value: 2131361883
 			public static int cancel_action = 2131361883;
-			
-			// aapt resource value: 0
-			public static int cardView1 = 0;
-			
-			// aapt resource value: 0
-			public static int cardView2 = 0;
-			
-			// aapt resource value: 0
-			public static int cardView3 = 0;
-			
-			// aapt resource value: 0
-			public static int cardView4 = 0;
-			
-			// aapt resource value: 0
-			public static int cardView5 = 0;
-			
-			// aapt resource value: 0
-			public static int cardView6 = 0;
 			
 			// aapt resource value: 1
 			public static int cast_button_type_closed_caption = 1;
@@ -3721,6 +3709,42 @@ namespace NewApp
 			
 			// aapt resource value: 2131361806
 			public static int homeAsUp = 2131361806;
+			
+			// aapt resource value: 0
+			public static int home_btn_BB = 0;
+			
+			// aapt resource value: 0
+			public static int home_btn_HW = 0;
+			
+			// aapt resource value: 0
+			public static int home_btn_LP = 0;
+			
+			// aapt resource value: 0
+			public static int home_btn_MR = 0;
+			
+			// aapt resource value: 0
+			public static int home_btn_N = 0;
+			
+			// aapt resource value: 0
+			public static int home_btn_SNS = 0;
+			
+			// aapt resource value: 0
+			public static int home_card_BB = 0;
+			
+			// aapt resource value: 0
+			public static int home_card_HW = 0;
+			
+			// aapt resource value: 0
+			public static int home_card_LP = 0;
+			
+			// aapt resource value: 0
+			public static int home_card_MR = 0;
+			
+			// aapt resource value: 0
+			public static int home_card_N = 0;
+			
+			// aapt resource value: 0
+			public static int home_card_SNS = 0;
 			
 			// aapt resource value: 0
 			public static int home_main_lLayout = 0;

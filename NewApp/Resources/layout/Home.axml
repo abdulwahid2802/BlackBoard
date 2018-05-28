@@ -10,7 +10,7 @@
     android:weightSum="10">
     <RelativeLayout
         android:id="@+id/home_rLayout"
-        android:layout_weight="2"
+        android:layout_weight="3"
         android:layout_height="0dp"
         android:layout_width="match_parent">
         <TextView
@@ -31,7 +31,7 @@
         android:columnOrderPreserved="false"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="8"
+        android:layout_weight="7"
         android:minWidth="25px"
         android:minHeight="25px">
     <!-- Row 1 -->
@@ -39,7 +39,7 @@
         <android.support.v7.widget.CardView
             android:minWidth="25px"
             android:minHeight="25px"
-            android:id="@+id/cardView1"
+            android:id="@+id/home_card_HW"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -47,8 +47,13 @@
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
             android:layout_rowWeight="1"
-            app:cardMaxElevation="8dp"
-            app:cardCornerRadius="8dp">
+            app:cardBackgroundColor="#801ba4e2"
+            app:cardMaxElevation="7dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            android:fitsSystemWindows="false"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
             <LinearLayout
                 android:orientation="vertical"
                 android:minWidth="25px"
@@ -58,16 +63,19 @@
                 android:id="@+id/linearLayout1"
                 android:layout_gravity="center">
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@mipmap/icon"
-                    android:id="@+id/button1" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_hw"
+                    android:id="@+id/home_btn_HW"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_gravity="center" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/holo_blue_dark"
-                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="#f7f7f7"
+                    android:textStyle="normal"
                     android:text="Homework"
                     android:layout_gravity="center_horizontal" />
             </LinearLayout>
@@ -75,7 +83,7 @@
         <android.support.v7.widget.CardView
             android:minWidth="25px"
             android:minHeight="25px"
-            android:id="@+id/cardView2"
+            android:id="@+id/home_card_LP"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -83,8 +91,12 @@
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
             android:layout_rowWeight="1"
-            app:cardMaxElevation="8dp"
-            app:cardCornerRadius="8dp">
+            app:cardMaxElevation="7dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#80ff3264"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardElevation="5dp">
             <LinearLayout
                 android:orientation="vertical"
                 android:minWidth="25px"
@@ -94,16 +106,19 @@
                 android:id="@+id/linearLayout2"
                 android:layout_gravity="center">
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@mipmap/icon"
-                    android:id="@+id/button2" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_lp"
+                    android:id="@+id/home_btn_LP"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_gravity="center" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/holo_blue_dark"
-                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="#f7f7f7"
+                    android:textStyle="normal"
                     android:text="Lesson Plan"
                     android:layout_gravity="center_horizontal" />
             </LinearLayout>
@@ -111,7 +126,7 @@
         <android.support.v7.widget.CardView
             android:minWidth="25px"
             android:minHeight="25px"
-            android:id="@+id/cardView3"
+            android:id="@+id/home_card_MR"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -119,8 +134,13 @@
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
             android:layout_rowWeight="1"
-            app:cardMaxElevation="8dp"
-            app:cardCornerRadius="8dp">
+            app:cardMaxElevation="7dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#802b4162"
+            android:clipToPadding="false"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardElevation="5dp">
             <LinearLayout
                 android:orientation="vertical"
                 android:minWidth="25px"
@@ -130,16 +150,19 @@
                 android:id="@+id/linearLayout3"
                 android:layout_gravity="center">
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@mipmap/icon"
-                    android:id="@+id/button3" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_bb"
+                    android:id="@+id/home_btn_MR"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_gravity="center" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/holo_blue_dark"
-                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="#f7f7f7"
+                    android:textStyle="normal"
                     android:text="Reports"
                     android:layout_gravity="center_horizontal" />
             </LinearLayout>
@@ -147,7 +170,7 @@
         <android.support.v7.widget.CardView
             android:minWidth="25px"
             android:minHeight="25px"
-            android:id="@+id/cardView4"
+            android:id="@+id/home_card_BB"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -155,8 +178,12 @@
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
             android:layout_rowWeight="1"
-            app:cardMaxElevation="8dp"
-            app:cardCornerRadius="8dp">
+            app:cardMaxElevation="7dp"
+            app:cardCornerRadius="8dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#80fd9727"
+            app:cardElevation="5dp">
             <LinearLayout
                 android:orientation="vertical"
                 android:minWidth="25px"
@@ -166,16 +193,19 @@
                 android:id="@+id/linearLayout4"
                 android:layout_gravity="center">
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@mipmap/icon"
-                    android:id="@+id/button4" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_mr"
+                    android:id="@+id/home_btn_BB"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_gravity="center" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/holo_blue_dark"
-                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="#f7f7f7"
+                    android:textStyle="normal"
                     android:text="Bulletin Board"
                     android:layout_gravity="center_horizontal" />
             </LinearLayout>
@@ -183,7 +213,7 @@
         <android.support.v7.widget.CardView
             android:minWidth="25px"
             android:minHeight="25px"
-            android:id="@+id/cardView5"
+            android:id="@+id/home_card_SNS"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -191,8 +221,12 @@
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
             android:layout_rowWeight="1"
-            app:cardMaxElevation="8dp"
-            app:cardCornerRadius="8dp">
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardMaxElevation="7dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#80fc6621"
+            app:cardElevation="5dp">
             <LinearLayout
                 android:orientation="vertical"
                 android:minWidth="25px"
@@ -202,16 +236,19 @@
                 android:id="@+id/linearLayout5"
                 android:layout_gravity="center">
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@mipmap/icon"
-                    android:id="@+id/button5" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_sns"
+                    android:id="@+id/home_btn_SNS"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_gravity="center" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:textColor="@android:color/holo_blue_dark"
-                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="#f7f7f7"
+                    android:textStyle="normal"
                     android:text="SNS"
                     android:layout_gravity="center_horizontal" />
             </LinearLayout>
@@ -219,7 +256,7 @@
         <android.support.v7.widget.CardView
             android:minWidth="25px"
             android:minHeight="25px"
-            android:id="@+id/cardView6"
+            android:id="@+id/home_card_N"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -227,8 +264,12 @@
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
             android:layout_rowWeight="1"
-            app:cardMaxElevation="8dp"
-            app:cardCornerRadius="8dp">
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardMaxElevation="7dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#8087bac0"
+            app:cardElevation="5dp">
             <LinearLayout
                 android:orientation="vertical"
                 android:minWidth="25px"
@@ -238,16 +279,19 @@
                 android:id="@+id/linearLayout6"
                 android:layout_gravity="center">
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@mipmap/icon"
-                    android:id="@+id/button6" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_n"
+                    android:id="@+id/home_btn_N"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_gravity="center" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14dp"
-                    android:textColor="@android:color/holo_blue_dark"
-                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="#f7f7f7"
+                    android:textStyle="normal"
                     android:text="Notifications"
                     android:layout_gravity="center_horizontal" />
             </LinearLayout>

@@ -14,6 +14,7 @@ using Firebase;
 using Firebase.Auth;
 using Android.Gms.Tasks;
 using Java.Lang;
+using Android.Views.Animations;
 
 namespace NewApp
 {
@@ -136,8 +137,6 @@ namespace NewApp
 		public void OnClick(View v)
 		{
 			int id = v.Id;
-			Console.WriteLine("out of switch Sign In Cliskced");
-
 
             switch(id)
 			{
@@ -145,7 +144,6 @@ namespace NewApp
 					StartActivity(new Android.Content.Intent(this, typeof(ForgotPassword)));
 					break;
 				case Resource.Id.logPage_btn_singin:
-					Console.WriteLine("Sign In Cliskced");
 					LoginUser(txtInputUserName.Text, txtInputPassWord.Text);
 
 					break;
